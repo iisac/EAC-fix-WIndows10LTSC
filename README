@@ -1,0 +1,8 @@
+How to fix Plex EAC3 playback with no sound on Windows 10 LTSC (maybe others as well).
+
+You have to download "DolbyDecMFT.dll".
+Copy it to C:\Windows\System32\ AND C:\Windows\SysWOW64\
+Use CMD to register them: 
+
+regsvr32 c:\windows\system32\DolbyDecMFT.dll
+regsvr32 c:\windows\syswow64\DolbyDecMFT.dll 
